@@ -1,9 +1,14 @@
-import React from "react";
+import React from 'react';
+import { withRouter } from 'react-router-dom';
+// withRouter is a higher order component that allows us to take another component
+// as an argument and returns another component. It prevents prop tunneling(or drilling),
+// which in this case would be passing props from homepage to directory just to pass them down to 
+// menu item, even though directory does not actually need them.
 
 import './menu-item.styles.scss';
 
-const MenuItem = ({ title, imageUrl, size }) => (
-  <div className={`${size} menu-item`}>
+const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
+  <div className={`${size} menu-item`} onClick={() => history.push(`${match.url}${linkUrl}`)}>
     <div 
         className='background-image' 
         style={{
@@ -17,4 +22,5 @@ const MenuItem = ({ title, imageUrl, size }) => (
   </div>
 );
 
-export default MenuItem;
+export default withRouter(MenuItem);
+//will now have access to location, match, and history props we want
