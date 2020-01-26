@@ -8,3 +8,8 @@ a {
     text-decoration: none;
     color: black;
 }
+
+* {
+    /*to remove default additional padding on sign-in input form and ensure buttons align with the form*/
+    box-sizing: border-box;
+}
