@@ -2,3 +2,9 @@ body {
     font-family: 'Open Sans Condensed';
     padding: 20px 60px;
 }
+
+/*Link is still rendered as an a tag, as you can see in React dev tools*/
+a {
+    text-decoration: none;
+    color: black;
+}
