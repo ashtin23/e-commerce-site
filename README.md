@@ -1,6 +1,6 @@
 # E-Commerce Site
 
-## This is an e-commerce site built with React, Redux, Node.js, and a Firebase Backend. It acts as a simulated version of a typical e-commerce site you would find on the web. Basic functionality includes a working cart and checkout system, the ability to sign in by email or with Google, and the ability to process payments with Stripe (simulation card details provided). It was my first time working with Redux in an attempt to familiarize myself with the technology. In the future, I plan to incorporate React Hooks, Contet API, and GraphQL.
+### This is an e-commerce site built with React, Redux, Node.js, and a Firebase Backend. It acts as a simulated version of a typical e-commerce site you would find on the web. Basic functionality includes a working cart and checkout system, the ability to sign in by email or with Google, and the ability to process payments with Stripe (simulation card details provided). It was my first time working with Redux in an attempt to familiarize myself with the technology. In the future, I plan to incorporate React Hooks, Contet API, and GraphQL.
 
 
 ### Node
